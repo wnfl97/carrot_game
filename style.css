@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.background__img {
+  width: 62.5rem;
+  border-radius: 1.25rem;
+  position: relative;
+}
+
+.header {
+  font-size: 3.125rem;
+  background-color: aliceblue;
+  border-radius: 1.25rem;
+}
