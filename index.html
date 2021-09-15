@@ -11,23 +11,37 @@
     crossorigin="anonymous">
     <script defer src='main.js'></script>
 </head>
-
+<!-- start:  <i class="far fa-play-circle"></i> -->
 <!-- stop: <i class="far fa-stop-circle"></i> -->
 <!-- rewind: <i class="fas fa-undo-alt"></i>-->
 <body>
-    <section>
-        <header class='header'>Click the carrots in time!</header>
-        <div class="background">
-            <img class='background__img'
-            src="img/background.png" 
-            alt="background">
-            <button class='start__btn'>
+    <section class='section'>
+        <img src="img/background.png" alt="background" class="background__img">
+<ul class="function__top">
+    <li class="function__list">
+        <div class="btn1">
+            <button class="start__btn">
                 <i class="far fa-play-circle"></i>
             </button>
-            <button class='stop__btn'>
-                <i class="far fa-stop-circle"></i>
-            </button>
-            </div>
+        </div>
+        <div class="timer">0:10</div>
+        <div class="last-num">10</div>
+    </li>
+</ul>
+
+<footer class="footer">
+    <div class="message">
+        <span class="replay__msg">
+            Replay❓
+        </span>
+        <button class="replay__btn">
+            <i class="fas fa-undo-alt"></i>
+        </button>
+
+    </div>
+</footer>
+
+
         
         
     </section>

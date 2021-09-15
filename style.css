@@ -1,15 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   text-align: center;
 }
-
+.section {
+  position: relative;
+}
 .background__img {
   width: 62.5rem;
   border-radius: 1.25rem;
-  position: relative;
 }
 
-.header {
-  font-size: 3.125rem;
-  background-color: aliceblue;
-  border-radius: 1.25rem;
+li {
+  list-style-type: none;
+}
+
+.function__top {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+}
+button:hover {
+  color: tomato;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.timer {
+  border: 0.313rem solid black;
+  width: 9.375rem;
+  height: 3.125rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  background: whitesmoke;
+}
+
+.last-num {
+  border: 0.188rem solid black;
+  border-radius: 50%;
+  width: 3.438rem;
+  height: 3.438rem;
+  line-height: 2.813rem;
+  font-size: 2.5rem;
+  background: tomato;
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 0.625rem;
+  margin-left: 3.125rem;
+}
+
+.footer {
+  margin: auto;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  display: block;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 18.75rem;
+  height: 12.5rem;
+  line-height: 12.5rem;
+}
+
+.replay__msg {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: black;
 }
