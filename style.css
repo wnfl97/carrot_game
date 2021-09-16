@@ -7,33 +7,113 @@
 body {
   text-align: center;
 }
-.section {
-  position: relative;
-}
-.background__img {
-  width: 62.5rem;
-  border-radius: 1.25rem;
-}
 
-li {
-  list-style-type: none;
-}
-
-.function__top {
+.game {
   margin: auto;
+  background: url(img/background.png) center/cover;
+  width: 50rem;
+  height: 31.25rem;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-  background: transparent;
-  border: none;
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.game__start {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: wheat;
+  border: 3px solid;
+  border-radius: 20%;
+  font-size: 1.5rem;
+}
+
+.game__timer {
+  border: 4px solid;
+  background-color: whitesmoke;
+  font-size: 2.25rem;
+  width: 6.25rem;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.game__score {
+  border: 3px solid black;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-top: 8px;
+  width: 3.125rem;
+  height: 3.125rem;
+  text-align: center;
+  background-color: tomato;
+  color: whitesmoke;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 300ms ease-in;
+}
+
+.game__field {
+  width: 100%;
+  height: 100%;
+  margin-top: 2.5rem;
+  opacity: 0.4;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  height: 8.75rem;
+  padding: 1.25rem;
+  margin: auto;
+  /* background-color: black;
+  opacity: 0.6;  글자 투명도도 같이 조절됨*/
+  background: #00000080;
+  /* 배경색만 조절됨 */
+  border-radius: 20px;
+  color: white;
+  transform: translateY(-150%);
+}
+
+.pop-up--hide {
+  display: none;
+  /* 평소에 안보이도록.. */
+}
+
+.pop-up__replay {
+  margin-top: 10px;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: wheat;
+  border: 3px solid black;
+  border-radius: 20%;
+  font-size: 1.5rem;
+}
+
+.pop-up__msg {
+  font-size: 2rem;
+}
+
+/* .game__start {
+  border: 3px solid black;
   outline: none;
-  font-size: 4rem;
+  font-size: 2rem;
+  background-color: blanchedalmond;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3rem;
+  border-radius: 0.6rem;
 }
 button:hover {
   color: tomato;
@@ -41,7 +121,18 @@ button:hover {
   transform: scale(1.2);
 }
 
-.timer {
+.game__replay {
+  background-color: blanchedalmond;
+  border: 3px solid black;
+  outline: none;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3rem;
+  border-radius: 0.6rem;
+}
+
+.game__timer {
   border: 0.313rem solid black;
   width: 9.375rem;
   height: 3.125rem;
@@ -50,7 +141,7 @@ button:hover {
   background: whitesmoke;
 }
 
-.last-num {
+.game__score {
   border: 0.188rem solid black;
   border-radius: 50%;
   width: 3.438rem;
@@ -59,30 +150,27 @@ button:hover {
   font-size: 2.5rem;
   background: tomato;
   color: whitesmoke;
-  font-weight: bold;
+
   margin-top: 0.625rem;
   margin-left: 3.125rem;
 }
 
-.footer {
+.pop-up {
+  border-radius: 20px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 20rem;
+  height: 12rem;
+  line-height: 11rem;
   margin: auto;
   position: absolute;
-  top: 80%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.message {
-  display: block;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 18.75rem;
-  height: 12.5rem;
-  line-height: 12.5rem;
-}
-
-.replay__msg {
+.game__msg {
   font-size: 2.25rem;
   font-weight: bold;
   color: black;
-}
+} */
